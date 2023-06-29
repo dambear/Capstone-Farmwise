@@ -1,0 +1,17 @@
+/* Custom CSS for claymorphism design */
+.card {
+    border-radius: 20px;
+    background-color: #F6F6F6;
+    box-shadow: 10px 10px 15px #e0e0e0, -10px -10px 15px #ffffff;
+  }
+  
+  .btn {
+    border-radius: 20px;
+    background-color: #f8f8f8;
+    color: #333333;
+    box-shadow: 5px 5px 10px #cfcfcf, -5px -5px 10px #ffffff;
+  }
+  
+  .btn:hover {
+    background-color: #f0f0f0;
+  }
