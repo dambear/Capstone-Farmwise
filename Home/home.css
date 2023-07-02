@@ -1,0 +1,36 @@
+body {
+    background-color: #f0f0f0;
+  }
+  
+  .claymorphism {
+    background-color: #f0f0f0;
+    border-radius: 16px;
+    box-shadow:  20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+  }
+  
+  .sidebar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+
+    
+  }
+  
+  .nav-link {
+    border-radius: 12px;
+    margin-bottom: 5px;
+    color: #5b8a3a; /* Farm-themed text color */
+  }
+  
+  .nav-link:hover {
+    background-color: #e9e9e9;
+    box-shadow: inset 4px 4px 8px #d9d9d9, inset -4px -4px 8px #ffffff;
+    color: #3a5b23; /* Darker farm-themed text color on hover */
+  }
+  
+  /* Farm-themed icons */
+  .nav-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
