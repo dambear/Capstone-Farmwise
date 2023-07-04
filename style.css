@@ -1,4 +1,8 @@
-/* Custom CSS for claymorphism design */
+@font-face {
+  font-family: Etna-Sans-serif;
+  src: url(font/Etna-Sans-serif.otf);
+}
+
 
 body{
   background-image: url("a.jpg");
@@ -28,11 +32,22 @@ body{
 }
 
 .container{
-  margin-top: 8%;
+  margin-top: 2%;
 }
 
 .wel-img{
   width: 150px;
   height: 150px;
   margin: auto;
+}
+
+
+.form-control{
+  border-color: rgb(199, 199, 199);
+  border-radius: 18px;
+
+}
+
+.etna{
+  font-family: Etna-Sans-serif;
 }
