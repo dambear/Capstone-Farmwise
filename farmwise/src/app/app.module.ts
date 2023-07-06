@@ -8,7 +8,7 @@ import { SidebarComponent } from './sharepage/sidebar/sidebar.component';
 import { FooterComponent } from './sharepage/footer/footer.component';
 import { LoginComponent } from './pages/login/login.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
-import { ShowweatherComponent } from './pages/showweather/showweather.component';
+
 
 @NgModule({
   declarations: [
@@ -16,8 +16,7 @@ import { ShowweatherComponent } from './pages/showweather/showweather.component'
     SidebarComponent,
     FooterComponent,
     LoginComponent,
-    DashboardComponent,
-    ShowweatherComponent
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
