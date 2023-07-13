@@ -1,0 +1,38 @@
+
+.dash-content{
+  position: fixed;
+  margin-left: 18%;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  flex: 1;
+  margin: 50px 30px;
+  border-color: greenyellow;
+  font-family: Etna-Sans-serif;
+
+}
+
+.card-body{
+
+  height: 250px;
+}
+
+
+.weather-forecast-container{
+  width: 100%;
+  text-align: center;
+  background-color: greenyellow;
+  
+}
+
+
+.grid-container{
+
+  margin-top: 10px;
+  
+}

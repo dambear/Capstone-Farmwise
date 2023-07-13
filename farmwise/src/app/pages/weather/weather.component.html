@@ -1,0 +1,161 @@
+
+
+<div class="dash-content">
+
+    <div class="card-container">
+
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">{{ weatherData[0]?.Date | date: 'EEEE' }}</h5>
+            <div class="weather-forecast-container" >
+                <img src='iconMapping[weatherData[0]?.IconPhrase]' height="80"/>
+            </div>
+            <div class="grid-container">
+                <div class="row">
+                <div class="col-12">
+                    MinTemp: {{ fahrenheitToCelsius(weatherData[0]?.Temperature.Minimum.Value) | number:'1.0-0' }}&deg;C
+                    
+                </div>
+                <div class="col-12">
+                    MaxTemp: {{ fahrenheitToCelsius(weatherData[0]?.Temperature.Maximum.Value) | number:'1.0-0' }}&deg;C
+                </div>
+
+                <div class="col-12">
+                    Rain Odds: {{ weatherData[0]?.Day.PrecipitationProbability }}% 
+                </div>
+                <div class="col-12">
+                    Wind: {{ weatherData[0]?.Day.Wind.Speed.Value }} km/h
+                </div>
+            
+                </div>
+                
+            </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">{{ weatherData[1]?.Date | date: 'EEEE' }}</h5>
+            <div class="weather-forecast-container" >
+                <img src='https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/extreme-rain.svg' height="80"/>
+            </div>
+            <div class="grid-container">
+                <div class="row">
+                <div class="col-12">
+                    MinTemp: {{ fahrenheitToCelsius(weatherData[1]?.Temperature.Minimum.Value) | number:'1.0-0' }}&deg;C
+                    
+                </div>
+                <div class="col-12">
+                    MaxTemp: {{ fahrenheitToCelsius(weatherData[1]?.Temperature.Maximum.Value) | number:'1.0-0' }}&deg;C
+                </div>
+
+                <div class="col-12">
+                    Rain Odds: {{ weatherData[1]?.Day.PrecipitationProbability }}% 
+                </div>
+                <div class="col-12">
+                    Wind: {{ weatherData[1]?.Day.Wind.Speed.Value }} km/h
+                </div>
+            
+                </div>
+                
+            </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">{{ weatherData[2]?.Date | date: 'EEEE' }}</h5>
+            <div class="weather-forecast-container" >
+                <img src='https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/extreme-rain.svg' height="80"/>
+            </div>
+            <div class="grid-container">
+                <div class="row">
+                <div class="col-12">
+                    MinTemp: {{ fahrenheitToCelsius(weatherData[2]?.Temperature.Minimum.Value) | number:'1.0-0' }}&deg;C
+                    
+                </div>
+                <div class="col-12">
+                    MaxTemp: {{ fahrenheitToCelsius(weatherData[2]?.Temperature.Maximum.Value) | number:'1.0-0' }}&deg;C
+                </div>
+
+                <div class="col-12">
+                    Rain Odds: {{ weatherData[2]?.Day.PrecipitationProbability }}% 
+                </div>
+                <div class="col-12">
+                    Wind: {{ weatherData[2]?.Day.Wind.Speed.Value }} km/h
+                </div>
+            
+                </div>
+                
+            </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">{{ weatherData[3]?.Date | date: 'EEEE' }}</h5>
+            <div class="weather-forecast-container" >
+                <img src='https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/extreme-rain.svg' height="80"/>
+            </div>
+            <div class="grid-container">
+                <div class="row">
+                <div class="col-12">
+                    MinTemp: {{ fahrenheitToCelsius(weatherData[3]?.Temperature.Minimum.Value) | number:'1.0-0' }}&deg;C
+                    
+                </div>
+                <div class="col-12">
+                    MaxTemp: {{ fahrenheitToCelsius(weatherData[3]?.Temperature.Maximum.Value) | number:'1.0-0' }}&deg;C
+                </div>
+
+                <div class="col-12">
+                    Rain Odds: {{ weatherData[3]?.Day.PrecipitationProbability }}% 
+                </div>
+                <div class="col-12">
+                    Wind: {{ weatherData[3]?.Day.Wind.Speed.Value }} km/h
+                </div>
+            
+                </div>
+                
+            </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">{{ weatherData[4]?.Date | date: 'EEEE' }}</h5>
+            <div class="weather-forecast-container" >
+                <img src='https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/extreme-rain.svg' height="80"/>
+            </div>
+            <div class="grid-container">
+                <div class="row">
+                <div class="col-12">
+                    MinTemp: {{ fahrenheitToCelsius(weatherData[4]?.Temperature.Minimum.Value) | number:'1.0-0' }}&deg;C
+                    
+                </div>
+                <div class="col-12">
+                    MaxTemp: {{ fahrenheitToCelsius(weatherData[4]?.Temperature.Maximum.Value) | number:'1.0-0' }}&deg;C
+                </div>
+
+                <div class="col-12">
+                    Rain Odds: {{ weatherData[4]?.Day.PrecipitationProbability }}% 
+                </div>
+                <div class="col-12">
+                    Wind: {{ weatherData[4]?.Day.Wind.Speed.Value }} km/h
+                </div>
+            
+                </div>
+                
+            </div>
+            </div>
+        </div>
+
+    
+      
+    </div>
+
+   
+ 
+
+  </div>

@@ -5,8 +5,10 @@ import { LoginComponent } from './pages/login/login.component';
 
 const routes: Routes = [
 
-  {path: 'dash', component:DashboardComponent},
-  {path: '', component:LoginComponent}
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
+  { path: 'login', component: LoginComponent },
+
+  {path: 'dash', component:DashboardComponent, pathMatch: 'full'},
 
 
 

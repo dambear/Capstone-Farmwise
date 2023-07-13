@@ -19,11 +19,11 @@
             <form>
               <div class="mb-3">
                 <label for="username" class="form-label etna">Username</label>
-                <input type="text" class="form-control text-center etna" id="username" placeholder="Enter your username">
+                <input type="text" class="form-control text-center etna" id="username" [(ngModel)]="username" name="username" required  placeholder="Enter your username" >
               </div>
               <div class="mb-3">
                 <label for="password" class="form-label etna">Password</label>
-                <input type="password" class="form-control text-center etna" id="password" placeholder="Enter your password">
+                <input type="password" class="form-control text-center etna" id="password" [(ngModel)]="password" name="password" required placeholder="Enter your password">
               </div>
               <div class="text-center mb-3">
                 <input class="form-check-input etna" type="checkbox" id="rememberMe">
@@ -31,7 +31,7 @@
                 &nbsp&nbsp
                 <a class="etna text-decoration-none" href="#">Forget Password?</a>
               </div>
-              <form class="d-grid mb-3" action="/dash">
+              <form class="d-grid mb-3"  (submit)="login()">
                 
                 <button type="submit" class="btn btn-primary etna" > Login</button>  
                   
