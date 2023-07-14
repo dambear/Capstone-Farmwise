@@ -8,7 +8,7 @@
             <div class="card-body">
                 <h5 class="card-title">{{ weatherData[0]?.Date | date: 'EEEE' }}</h5>
             <div class="weather-forecast-container" >
-                <img src='iconMapping[weatherData[0]?.IconPhrase]' height="80"/>
+                <img [src]="getWeatherIcon(weatherData[0]?.Day.IconPhrase)" height="80"/>
             </div>
             <div class="grid-container">
                 <div class="row">
@@ -21,7 +21,7 @@
                 </div>
 
                 <div class="col-12">
-                    Rain Odds: {{ weatherData[0]?.Day.PrecipitationProbability }}% 
+                    Rain Odds: {{ weatherData[0]?.Day.PrecipitationProbability}}% 
                 </div>
                 <div class="col-12">
                     Wind: {{ weatherData[0]?.Day.Wind.Speed.Value }} km/h
@@ -38,7 +38,7 @@
             <div class="card-body">
                 <h5 class="card-title">{{ weatherData[1]?.Date | date: 'EEEE' }}</h5>
             <div class="weather-forecast-container" >
-                <img src='https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/extreme-rain.svg' height="80"/>
+                <img [src]="getWeatherIcon(weatherData[1]?.Day.IconPhrase)" height="80"/>
             </div>
             <div class="grid-container">
                 <div class="row">
@@ -67,7 +67,7 @@
             <div class="card-body">
                 <h5 class="card-title">{{ weatherData[2]?.Date | date: 'EEEE' }}</h5>
             <div class="weather-forecast-container" >
-                <img src='https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/extreme-rain.svg' height="80"/>
+                <img [src]="getWeatherIcon(weatherData[2]?.Day.IconPhrase)" height="80"/>
             </div>
             <div class="grid-container">
                 <div class="row">
@@ -97,7 +97,7 @@
             <div class="card-body">
                 <h5 class="card-title">{{ weatherData[3]?.Date | date: 'EEEE' }}</h5>
             <div class="weather-forecast-container" >
-                <img src='https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/extreme-rain.svg' height="80"/>
+                <img [src]="getWeatherIcon(weatherData[3]?.Day.IconPhrase)" height="80"/>
             </div>
             <div class="grid-container">
                 <div class="row">
@@ -126,7 +126,7 @@
             <div class="card-body">
                 <h5 class="card-title">{{ weatherData[4]?.Date | date: 'EEEE' }}</h5>
             <div class="weather-forecast-container" >
-                <img src='https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/extreme-rain.svg' height="80"/>
+                <img [src]="getWeatherIcon(weatherData[4]?.Day.IconPhrase)" height="80"/>
             </div>
             <div class="grid-container">
                 <div class="row">

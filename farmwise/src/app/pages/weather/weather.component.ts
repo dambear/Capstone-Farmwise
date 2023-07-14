@@ -25,7 +25,24 @@ export class WeatherComponent implements OnInit {
     return (fahrenheit - 32) * 5 / 9;
   }
 
-  iconMapping = {
+
+  getWeatherIcon(IconPhrase: string): string {
+    const defaultIcon = 'https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/clear-day.svg'; // Default icon if condition is not found in the mapping
+  
+    if (!IconPhrase) {
+      console.log('Condition is undefined or empty');
+      return defaultIcon;
+    }
+  
+    
+  
+    console.log('Condition:', IconPhrase);
+    console.log('Mapped Icon:', this.weatherIconMapping[IconPhrase]);
+  
+    return this.weatherIconMapping[IconPhrase] || defaultIcon;
+  }
+  
+  weatherIconMapping: { [key: string]: string } = {
     'Thunderstorms': 'https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/thunderstorms.svg',
     'Rain': 'https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/rain.svg',
     'Cloudy': 'https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/cloudy.svg',
@@ -41,9 +58,8 @@ export class WeatherComponent implements OnInit {
     'Partly Sunny w/ T-Storms' : 'https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/overcast-day-rain.svg',
     'Partly Cloudy w/ Showers' : 'https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/drizzle.svg',
     'Partly Cloudy w/ T-Storms' : 'https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/thunderstorms-day-rain.svg',
-    // Add more mappings for other weather conditions
+    // Add more mappings for different weather conditions
   };
-
-
-
 }
+
+
