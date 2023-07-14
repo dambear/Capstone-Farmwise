@@ -23,7 +23,32 @@
           <a class="nav-link claymorphism p-2" href="#"><img class="nav-icon" src="assets/sidebar-icons/settings.png"> Setting</a>
         </li>
       </ul>
+
+
+      <div>
+        <div class="card-body">
+          <div class="weather-forecast-container" >
+              <img [src]="getWeatherIcon(weatherData[0]?.Day.IconPhrase)" height="150"/>
+              <h2 class="card-title">{{ calculateAverageTemperature(weatherData[0]?.Temperature.Minimum.Value, weatherData[0]?.Temperature.Maximum.Value) | number:'1.0-0' }}&deg;C</h2>
+              <h5 class="card-title">{{ weatherData[0]?.Date | date: 'EEEE' }}, {{ currentTime }}</h5>
+          </div>
+          
+          
+              
+          
+          
+              
+        </div>
+      </div>
+
     </div>
+
+
+
+
+   
+
+   
   
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
