@@ -1,0 +1,128 @@
+
+
+
+
+
+
+
+
+
+<div class="dash-content">
+  
+    
+    
+
+  
+</div>
+  
+
+
+
+<app-sidebar></app-sidebar>
+
+<div class="dash-content">
+
+    <div id="updateFarmerModal" class="modal">
+        <div class="modal-content-md-4">
+          
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-md-4">
+                <div class="card p-4">
+        
+                    <div class="front">
+        
+                        <p><img class="icon" src="assets/sidebar-icons/boy.png">Update Farmer</p>
+        
+        
+                    </div>
+                    
+                    <form (ngSubmit)="updateFarmer()">
+                        <div class="mb-3">
+                          <label for="farmerName">Farmer Name:</label>
+                          <input type="text" id="farmerName" name="farmerName" [(ngModel)]="farmerData.farmerName" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="farmerAge">Age:</label>
+                          <input type="number" id="farmerAge" name="farmerAge" [(ngModel)]="farmerData.farmerAge" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="contactNumber">Contact Number:</label>
+                          <input type="text" id="contactNumber" name="contactNumber" [(ngModel)]="farmerData.contactNumber" required>
+                        </div>
+        
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary etna">Update Farmer</button>
+                        </div>
+                    
+                      </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+        </div>
+      </div>
+  
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-7">
+        <div class="card p-4">
+
+
+
+            <div class="front">
+
+                <p><img class="icon" src="assets/sidebar-icons/boy.png">Farmer</p>
+
+
+            </div>
+            
+            
+        
+  
+    
+                <table class="text-center table table table-bordered rounded border-dark">
+        
+                    <thead>
+                        <tr>
+                          <th>Farmer ID</th>
+                          <th>Farmer Name</th>
+                          <th>Farmer Age</th>
+                          <th>Contact Number</th>
+                          <th>Actions</th>
+
+                        </tr>
+                    </thead>
+                    
+                
+                    <tbody class="table-group-divider">
+                        <tr *ngFor="let farmer of farmers">
+                          <td>{{ farmer.farmerId }}</td>
+                          <td>{{ farmer.farmerName }}</td>
+                          <td>{{ farmer.farmerAge }}</td>
+                          <td>{{ farmer.contactNumber }}</td>
+                          <td>
+                            <a class="btn btn-sm btn-outline-dark"><i
+                                    class="fas fa-up-right-from-square"></i></a>
+                            <a (click)="openUpdateFarmerModal(farmer)" class="update btn btn-sm btn-outline-warning">
+                                <i class="fas fa-pen"></i></a>
+                            <a (click)="removeFarmer(farmer)" class="delete btn btn-sm btn-outline-danger">
+                                <i class="fas fa-trash"></i>
+                            </a>
+                        </td>
+                        </tr>
+                    </tbody>
+                </table>
+        
+        
+        
+        </div>
+      </div>
+    </div>
+  </div>
+  
